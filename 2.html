@@ -1,0 +1,70 @@
+<!-- EXERCISE-2  21B01a1202
+Table -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table border="1" id="table1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <br><br>
+    <table border="1" width="50%" align="center">
+        <tr align="center">
+             <td rowspan="2">1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td>6</td>
+        </tr>
+    </table><br><br>
+    <table border="1">
+        <caption>student details</caption>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+        </tr>
+        <tr>
+            <td>student-1</td>
+            <td>18</td>
+            <td>female</td>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- css -->
+<style>
+#one{
+    border-collapse:collapse;
+}
+th{
+    border-radius:10px;
+    border-color:rgb(231,0,0);
+}
+#table1{
+    border-collapse:collapse;
+}
+</style>

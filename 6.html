@@ -1,0 +1,48 @@
+<!-- EXERCISE-7-21B01A1202
+ARRAYS AND STRINGS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays and strings</title>
+    <script src="7.js" defer></script>
+</head>
+<body>
+    <h1>arrays</h1>
+    <p id="print"></p>
+    <p id="new"></p>
+    length of cars arrays: <p id="len"></p>
+    <p id="old"></p>
+    <div id="for"></div>
+    <div id="of"></div><br>
+
+    <h1>strings</h1>
+    <p id="stri"></p>
+    length if string:
+    <p id="str"></p>
+    <p id="pri"></p>
+    <p id="slice"></p>
+</body>
+</html>
+<!-- JAVASCRIPT -->
+const cars = ['bmw', 'benz', 'maruthi', 'hundai', 'mahindra']
+let p = document.getElementById("print").innerHTML = cars;
+ cars[0] = "kia";
+ let q = document.getElementById("new").innerHTML = cars;
+ let r = document.getElementById("len").innerHTML = cars.length
+ cars.push('nexa')
+ let d = document.getElementById("old").innerHTML = cars;
+  for (i in cars) {
+  let f = document.getElementById("for").innerHTML = cars
+  }
+ for (j of cars) {
+  let o = document.getElementById("of").innerHTML = cars[j]
+  }
+  const str = "It is a string"
+ document.getElementById("stri").innerHTML = str
+ s = str.length
+ document.getElementById("str").innerHTML = s
+ document.getElementById("pri").innerHTML = "added a string"
+ document.getElementById("slice").innerHTML = str.slice(3, 9)

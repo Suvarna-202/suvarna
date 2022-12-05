@@ -1,0 +1,111 @@
+<!-- EXERCISE-5-21B01A1202
+PSEUDO ELEMENTS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <link rel="stylesheet" href="5.css">
+</head>
+<body>
+    <button class="btn">hover</button><br>
+    <a href="https://www.w3schools.com/js/default.asp">link</a><br>
+    <div>
+        <h3>this is using before pseudoelement</h3>
+        <h4>this is using after pseudoelement</h4>
+    </div>
+</body>
+</html>
+<!-- CSS -->
+<style>
+.btn:hover{
+    background-color:rgb(130,130,210);
+    border-radius:5px;
+}
+a:visited{
+    color:aqua;
+}
+p:hover{
+    color:red;
+}
+p:first-child{
+    color:rgb(121,138,216);
+}
+h3::before{
+    content:"-hello";
+}
+h4::after{
+    content:"-hello";
+}
+</style><!-- EXERCISE-6-21B01A1202
+    FLEX ELEMENTS -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flex box</title>
+        <link rel="stylesheet" href="6.css">
+    </head>
+    <body>
+        <h3>flex</h3>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>flex direction</h3>
+        <div  class="flex-direction">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </body>
+    </html>
+    <!-- css -->
+    <style>
+    .container{
+        display:flex;
+        justify-content:right;
+    }
+    div.container{
+        background-color:aqua;
+    }
+    .container>div{
+        background-color:red;
+        padding:10px;
+        margin:4px;
+        flex-grow:1;
+    }
+    .flex-direction{
+        display:flex;
+        flex-direction:column;
+        background-color:bisque;
+    }
+    .flex-direction>div{
+         background-color:rgb(155,145,145);
+         padding:10px;
+         margin:4px;
+    }
+    .flex-wrap{
+        display:flex;
+        flex-wrap:wrap;
+        flex-flow:row wrap;
+        align-items:flex-start;
+        align-content:stretch;
+        background-color:aqua;
+    }
+    .flex-wrap>div{
+        width:100px;
+        height:100px;
+        background-color:pink;
+        margin:5px;
+    }
+    </style>
